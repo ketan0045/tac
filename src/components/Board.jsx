@@ -5,7 +5,7 @@ const Board = () => {
   const [state, setState] = useState(Array(9).fill(null));
   const [isXTurn, setIsXTurn] = useState(true);
 
-  const checkWinner = () => {
+  const checkWinner1 = () => {
     const winnerLogic = [
       [0, 1, 2],
       [3, 4, 5],
@@ -29,7 +29,7 @@ const Board = () => {
     return false;
   };
 
-  const isWinner = checkWinner();
+  const isWinner = checkWinner1();
   const handleClick = (index) => {
     if (state[index] !== null) {
       return;
