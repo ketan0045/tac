@@ -53,7 +53,7 @@ const Board = () => {
           <button onClick={handleReset}>Play Again</button>
         </>
       ) : (
-        <>
+        <>91041 04333
           <h4>Player {isXTurn ? "X" : "O"} please move</h4>
           <div className="board-row">
             <Square  onClick={() => handleClick(0)} value={state[0]} />
